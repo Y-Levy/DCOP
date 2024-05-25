@@ -1,17 +1,3 @@
-In a Multi-Agent System (MAS), autonomous agents interact to pursue
-personal interests and/or to achieve common objectives. Distributed
-Constraint Optimization Problems (DCOPs) in this regard, have emerged
-as a prominent agent model to govern the agents’ autonomous behavior,
-where both algorithms and communication models are driven by the structure
-of the specific problem. A recent paper [19] offers a distributed local
-search algorithm in order to solve an Asymmetric-DCOP (ADCOP) where
-agents are partially cooperative (as opposed to the commonly used fullycooperative
-and self-interested agents). Based on this approach, we propose
-a novel implementation of these three heuristics, inspired by natural
-human interactions, exhibiting an efficient message transferring mechanism
-between agents. Our local search algorithm outperforms two popular
-heuristics when measuring the sum of gains, and shows competitive results
-when measuring the equality in the system. This study thus contributes
-to the understanding of partial cooperation heuristics against the classic
-approaches and provides interesting insights with regard to an equality
-objective.
+Distributed Constraints Satisfaction Problems (CSPs), are composed of a set of variables which are distributed among agents. The variables are connected by constraints which define the constraints network among the agents. As a result, the search algorithm for solving these problems is a distributed algorithm, run by agents that communicate by sending and receiving messages. In general, messages contain information about assignments of values to variables and refutations of assignments, by agents that have no compatible assignment to their own variables. A natural extension to distributed constraints satisfaction problems are distributed constraints Optimization problems (DCOPs). DCOPs have valued constraints, so that any compound assignment of constrained agents is associated with a finite cost (or gain). The goal of a search algorithm for DCOPs is to find the optimal solution. Most commonly the Utilitarian objective function which is the sum of all costs of all agents. Typical example problems are a timetable for courses in a university, where several departments cooperate for a single curriculum, or for employees in a large working place such as a hospital or an ER where several wards cooperate in satisfying important constraints of medical staff. More interesting recent examples incorporate non-cooperative agents who search for a good solution for a multi-agent game.
+
+Based on this approach, we propose a novel implementation, inspired by natural human interactions, exhibiting an efficient message transferring mechanism between agents.
